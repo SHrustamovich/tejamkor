@@ -1,0 +1,32 @@
+.news__intro{
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+    margin: 0 20px;
+}
+.new__news{
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 24px;
+        // margin: 0 20px;
+    }
+    &-card{
+        width: 31%;
+        min-width: 364px;
+        padding: 24px;
+        background-color: #f5f5f5;
+        border-radius: 16px;
+    }
+    &-img{
+        width: 316px;
+        height: 239px;
+        border-radius: 12px;
+    }
+    &-image{
+        width: 100%;
+        // overflow: hidden;
+        object-fit: cover;
+    }
+}

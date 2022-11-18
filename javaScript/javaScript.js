@@ -16,6 +16,28 @@ let swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+let swiperr = new Swiper(".mySwiperr", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true,
+  },
+  breakpoints: {
+    320: {
+    slidesPerView: 1,
+    spaceBetweenSlides: 0
+      },
+    690: {
+        slidesPerView: 2,
+        spaceBetweenSlides: 0
+    },
+    1140: {
+      slidesPerView: 3,
+      spaceBetweenSlides: 0
+  }
+},
+});
 const applyBtn = document.querySelectorAll(".intro__btn")
 const applyAll = document.querySelector(".apply-all")
 const applyClose = document.querySelector(".apply__close")
@@ -31,3 +53,5 @@ for(let i = 0; i < applyBtn.length; i++){
     applyAll.classList.add("add_apply")
   })
 }
+
+

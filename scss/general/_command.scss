@@ -45,13 +45,10 @@ body {
 }
 .wrapper{
     position: relative;
+    // overflow: hidden;
 }
 .container{
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
-}
-.footer{
-    padding-top: 1000px;
-    flex: 1 1 auto;
 }

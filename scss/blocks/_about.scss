@@ -46,9 +46,44 @@
         }
     }
 }
+.result{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 24px;
+    padding-top: 76px;
+    &__card{
+        background: #F5F5F5;
+        border-radius: 12px;
+        padding: 72px 0 32px 32px;
+    }
+    &__number{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 61px;
+        line-height: 73px;
+        color: #FFDC00;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+        color: #595959;
+    }
+}
+@media (max-width:1140px) {
+    .result{
+        display: flex;
+        flex-direction: column;
+    }
+}
 @media (max-width:1140px) {
     .about{
         margin: 0 15px;
+        &__btn{
+            font-size: 18px;
+        }
        &__card{
         padding: 12px;
         display: flex;
@@ -75,10 +110,16 @@
 }
 @media (max-width:444px) {
     .about{
+        &__btn{
+            font-size: 12px;
+        }
         &__card{
             align-items: center;
             &-img{
                 width: 232px;
+            }
+            &-text{
+                font-size: 12px;
             }
         }
     }
